@@ -1,6 +1,6 @@
 # SS2026_ICS_Seminar_Team_A2
 
-Industrial Communication Standars Seminar - SS2026
+Industrial Communication Standards Seminar - SS2026
 Hochschule Hamm-Lippstadt
 
 ## Team Members
