@@ -1,0 +1,166 @@
+@standard{IEC617843,
+  title        = {{IEC 61784-3:2021} --- Industrial communication networks ---
+                  Profiles --- {Part 3}: Functional safety fieldbuses},
+  organization = {International Electrotechnical Commission},
+  address      = {Geneva, Switzerland},
+  year         = {2021},
+  note         = {Defines CPF for PROFIsafe, FSoE, CIP Safety, openSAFETY,
+                  and CC-Link IE Safety, and the Black/White/Grey channel model}
+}
+
+@standard{IEC61508,
+  title        = {{IEC 61508-1:2010} --- Functional safety of
+                  electrical/electronic/programmable electronic
+                  safety-related systems},
+  organization = {International Electrotechnical Commission},
+  address      = {Geneva, Switzerland},
+  year         = {2010},
+  note         = {Umbrella standard defining SIL 1--4, PFH targets, and
+                  hardware/software development lifecycle requirements}
+}
+
+@standard{IEC62061,
+  title        = {{IEC 62061:2021} --- Safety of machinery --- Functional
+                  safety of safety-related control systems},
+  organization = {International Electrotechnical Commission},
+  address      = {Geneva, Switzerland},
+  year         = {2021},
+  note         = {Machine-specific safety standard; defines SIL requirements
+                  for Safety-Related Control Functions (SRCF)}
+}
+
+@standard{ISO13849,
+  title        = {{ISO 13849-1:2023} --- Safety of machinery ---
+                  Safety-related parts of control systems},
+  organization = {International Organization for Standardization},
+  address      = {Geneva, Switzerland},
+  year         = {2023},
+  note         = {Defines Performance Level (PL a--e) framework; used
+                  alongside IEC 62061 by machine builders}
+}
+
+@techreport{ETG5100,
+  title        = {{ETG.5100 S (R) V1.1.0} --- {FSoE} Slave Implementation Guide},
+  institution  = {EtherCAT Technology Group},
+  year         = {2012},
+  note         = {Specifies FSoE frame structure, CRC schemes, and watchdog
+                  mechanism; primary reference for FSoE performance data.
+                  Available at \url{https://www.ethercat.org}}
+}
+
+@techreport{ODVACIPSafety,
+  title        = {{CIP} Safety on {EtherNet/IP} Specification},
+  institution  = {ODVA},
+  address      = {Ann Arbor, MI},
+  year         = {2021},
+  note         = {Defines originator/target model, dual-packet format,
+                  Time Coordination Object, and Safety Supervisor Object
+                  (class 0x39) for CIP Safety}
+}
+
+@techreport{EPSGopenSAFETY,
+  title        = {{EPSG DS 304 V1.0.0} --- {openSAFETY} Safety Profile Specification},
+  institution  = {Ethernet POWERLINK Standardization Group},
+  year         = {2014},
+  note         = {Defines frame-in-frame design, dual sub-frame CRC scheme,
+                  and SPDO structure. Freely available at
+                  \url{https://www.ethernet-powerlink.org}}
+}
+
+@techreport{CLPASafety,
+  title        = {{CC-Link IE} Field Network Safety Specification},
+  institution  = {CC-Link Partner Association},
+  address      = {Nagoya, Japan},
+  year         = {2019},
+  note         = {Defines SCL structure, CRC-16 scheme, and ring/line
+                  topology constraints for CC-Link IE Safety; certified
+                  under JIS B 9961}
+}
+
+@article{Neumann2007,
+  author  = {Neumann, P.},
+  title   = {Communication in industrial automation --- What is going on?},
+  journal = {Annual Reviews in Control},
+  volume  = {31},
+  number  = {2},
+  pages   = {254--266},
+  year    = {2007},
+  note    = {Surveys the transition from fieldbus to Industrial Ethernet
+             and the resulting fragmentation of communication ecosystems}
+}
+
+@article{Faller2013,
+  author  = {Faller, R.},
+  title   = {Functional safety --- a {IEC 61508 SIL~3} compliant development process},
+  journal = {Reliability Engineering \& System Safety},
+  volume  = {92},
+  number  = {10},
+  pages   = {1407--1421},
+  year    = {2013},
+  note    = {Describes a certified development lifecycle for SIL 3 safety
+             stacks; relevant to the certification discussion in Section IV}
+}
+
+@book{Pigan2008,
+  author    = {Pigan, R. and Metter, M.},
+  title     = {Automating with {PROFINET}},
+  publisher = {Publicis / Siemens Press},
+  address   = {Erlangen, Germany},
+  year      = {2008},
+  note      = {Covers PROFINET architecture and PROFIsafe integration;
+               background reference for the fieldbus evolution section}
+}
+
+@article{MoyneTilbury2007,
+  author  = {Moyne, J. and Tilbury, D.},
+  title   = {The emergence of industrial control networks for manufacturing
+             control, diagnostics, and safety data},
+  journal = {Proceedings of the IEEE},
+  volume  = {95},
+  number  = {1},
+  pages   = {29--47},
+  month   = jan,
+  year    = {2007},
+  note    = {Analyses the shift from dedicated fieldbus to Industrial Ethernet
+             and the resulting safety challenges addressed in this paper}
+}
+
+@manual{SiemensSafety,
+  title        = {{SIMATIC Safety} --- Configuring and Programming},
+  organization = {Siemens AG},
+  address      = {Nuremberg, Germany},
+  year         = {2021},
+  note         = {Primary reference for PROFIsafe F-Host/F-Device model,
+                  F-PDU structure, CRC-24, and TIA Portal Safety toolchain}
+}
+
+@manual{RockwellGuardLogix,
+  title        = {{GuardLogix 5580} Controller Systems Safety Reference Manual},
+  organization = {Rockwell Automation},
+  address      = {Milwaukee, WI},
+  number       = {1756-RM012},
+  year         = {2022},
+  note         = {Reference for CIP Safety performance data, Studio 5000
+                  GuardLogix toolchain, and North American deployment context}
+}
+
+@techreport{BRopenSAFETY,
+  title        = {{openSAFETY} --- The Open Safety Standard},
+  institution  = {B\&R Industrial Automation},
+  address      = {Eggelsberg, Austria},
+  year         = {2020},
+  note         = {White paper describing openSAFETY dual sub-frame architecture,
+                  royalty-free certification model, and European OEM deployments}
+}
+
+@standard{CiACanopen,
+  title        = {{CiA 304} --- {CANopen} Safety},
+  organization = {CAN in Automation},
+  address      = {Nuremberg, Germany},
+  year         = {2006},
+  note         = {Defines safety communication over CAN/CANopen; predecessor
+                  to the Black Channel approach; used in medical devices and
+                  building automation. Noted in this paper for historical context
+                  and excluded from the main comparison as it operates over CAN
+                  bus rather than Industrial Ethernet}
+}
